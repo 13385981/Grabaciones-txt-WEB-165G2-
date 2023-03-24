@@ -1,0 +1,1268 @@
+Clase 1
+HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_Malísima</title>
+</head>
+
+<body>
+    <h1>Nuestra primera Web</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam possimus soluta, ipsa explicabo odio magnam et
+        officia itaque consequatur iure. Corrupti velit enim aut quos temporibus! Porro quo velit impedit!</p>
+
+    <button>Boton</button>
+
+    <script src="./Index.js"></script>
+</body>
+
+
+
+</html>
+
+//Creamos un espacio en memoria (variable) para guardar la ref Capturo el Boton
+let btnCapturado;
+console.log();
+//Captu el Boton y lo guardamos en la variable
+btnCapturado = document.querySelector("button");
+console.log("document");
+console.log (btnCapturado);
+//escuchar el botón cuando hagan clik
+btnCapturado.addEventListener("click", () => alert ("te saludo hola cat"));
+
+CLASE3
+HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
+
+JS
+
+// console.log("inicio...");
+// const weather = "lluvioso";
+
+// if (weather === "lluvioso") {
+//   console.log("llevá un paraguas");
+// } else {
+//   console.log("El tiempo está", weather);
+// }
+
+// console.log("fin del programa...");
+
+//escribir un algoritmo que determine el mayor de dos números
+
+// let num_1 = 120;
+// let num_2 = 100;
+// let result = "";
+
+// if (num_1 === num_2) {
+//   result = "El número " + num_1 + " es igual que " + num_2;
+// } else if (num_1 < num_2) {
+//   result = "El número " + num_2 + " es mayor que " + num_1;
+// } else {
+//   result = "El número " + num_2 + " es menor que " + num_1;
+// }
+
+// console.log(result);
+
+//escribir un algoritmo que determine el día de la semana
+const today = new Date().getDay();
+let day = "";
+
+if (today === 0) {
+  day = "domingo";
+} else if (today === 1) {
+  day = "lunes";
+} else if (today === 2) {
+  day = "martes";
+} else if (today === 3) {
+  day = "miércoles";
+} else if (today === 4) {
+  day = "jueves";
+} else if (today === 5) {
+  day = "viernes";
+} else if (today === 6) {
+  day = "sábado";
+} else {
+  day = "se rompió la Matrix changos";
+}
+console.log("Hoy es " + day + " con if");
+
+switch (today) {
+  case 0:
+    day = "domingo";
+    break;
+  case 1:
+    day = "lunes";
+    break;
+  case 2:
+    day = "martes";
+    break;
+  case 3:
+    day = "miércoles";
+    break;
+  case 4:
+    day = "jueves";
+    break;
+  case 5:
+    day = "viernes";
+    break;
+  case 6:
+    day = "sábado";
+    break;
+  default:
+    day = "se rompió la Matrix changos";
+}
+
+console.log("Hoy es", day + " con switch");
+
+let counter = 100;
+console.log(counter == true);
+while (counter < 5) {
+  console.count("hola");
+  counter = counter + 1; //counter++
+}
+
+444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
+CLASE4
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Headings de h1 a h6 -->
+  <h1>título de nivel 1</h1>
+  <h2>título de nivel 2</h2>
+  <h3>título de nivel 3</h3>
+  <h4>título de nivel 4</h4>
+  <h5>título de nivel 5</h5>
+  <h6>título de nivel 6</h6>
+
+  <!-- párrafo -->
+  <p>Párrafo de muestra</p>
+  <!-- formatting tags -->
+  <p>Lorem <em>ipsum dolor</em> sit amet consectetur adipisicing elit. Delectus exercitationem <i>mollitia praesentium
+      veritatis</i>
+    doloribus, <b>laborum</b>, <u>voluptas, sed nostrum possimus est rerum?</u> Quasi, saepe beatae? Nulla, accusantium
+    velit?
+    Ducimus, rerum quo.</p>
+
+  <!-- Images -->
+  <img src="/images/fruits.jpeg" title="Foto de Man Ray" alt="canasta de paja con granadas">
+  <img src="/images/fruits.jpeg" title="Foto de Man Ray" alt="canasta de paja con granadas" width="300">
+
+  <img src="https://images.pexels.com/photos/15552582/pexels-photo-15552582.jpeg" alt="en equipo somos más fuertes"
+    width="200">
+
+  <img src="/images/cat-laptop.gif" alt="gato programador" width="300">
+
+  <!-- Listas -->
+
+  <h4>Lista No Ordenada</h4>
+
+  <ul>
+    <li>JavaScript</li>
+    <li>CSS</li>
+    <li>HTML</li>
+  </ul>
+
+  <h4>Lista Ordenada</h4>
+  <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ol>
+
+  <h4>Lista Descriptiva</h4>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Lenguaje de etiquetas</dd>
+    <dt>CSS</dt>
+    <dd>Lenguaje de hojas de estilo</dd>
+    <dt>JavaScript</dt>
+    <dd>Lenguaje de programación de scripts</dd>
+  </dl>
+
+  <!-- Multimedia tags -->
+  <audio controls src="/multimedia/Blondie - Maria.mp3"></audio>
+  <video controls autoplay loop src="/multimedia/colored old film look with scratches   HD overlay.mp4" width="400">
+  </video>
+
+  <!-- Iframe -->
+  <h3>Cooking tips by Gordon Ramsey</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/uNT_AxXrUGs" title="Gordon Ramsey cocinando"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+
+  <iframe title="titulo del cortometraje" src="https://player.vimeo.com/video/799104662?h=afc6ad639e" width="400"
+    height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+  <!-- Computer Code And Escape Characters -->
+  <p>Aquí tenemos un bucle de JavaScript <code>for(let i = 0; i &lt array.length; i++)</code> ¿Fácil, verdad?</p>
+
+  <p>HTML muestra párrafos con la etiqueta
+    &ltp&gt</p>
+
+  <!-- Links - Hyperlinks -->
+  <a href="https://www.utn.edu.ar/es/">UTN</a>
+  <br />
+  <a href="https://www.utn.edu.ar/es/" target="_blank">Universidad Tecnológica Nacional</a>
+
+  <!-- Citas quotation cite -->
+  <p>Here is a quote from WWF's website:</p>
+
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF
+    works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver
+    innovative solutions that protect communities, wildlife, and the places in which they live.
+  </blockquote>
+
+  <p>WWF's goal is to: <q><i>Build a future where people live in harmony with nature.</i></q></p>
+
+
+  <!-- Tables -->
+  <table>
+
+
+
+  </table>
+
+</body>
+
+</html>
+
+
+jS
+
+NO ESTA
+
+555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+CLASE5
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav>
+    <h4>Navegación</h4>
+    <ul>
+      <li><a href="#tabla">TABLAS HTML</a></li>
+      <li><a href="#gordon"> GORDON COCINA</a></li>
+    </ul>
+
+    <a href="#tabla">TABLAS HTML</a>
+    <a href="#gordon"> GORDON COCINA</a>
+  </nav>
+
+  <!-- Headings de h1 a h6 -->
+  <h1>título de nivel 1</h1>
+  <h2>título de nivel 2</h2>
+  <h3>título de nivel 3</h3>
+  <h4>título de nivel 4</h4>
+  <h5>título de nivel 5</h5>
+  <h6>título de nivel 6</h6>
+
+  <!-- párrafo -->
+  <p>Párrafo de muestra</p>
+
+  <!-- elementos block vs inline -->
+  <span>Hola</span>
+  <span>Hola Mundo Mundial Universal</span>
+  <span>Hola</span>
+  <p>mundo</p>
+  <!-- formatting tags -->
+  <p>Lorem <em>ipsum dolor</em> sit amet consectetur adipisicing elit. Delectus exercitationem <i>mollitia praesentium
+      veritatis</i>
+    doloribus, <b>laborum</b>, <u>voluptas, sed nostrum possimus est rerum?</u> Quasi, saepe beatae? Nulla, accusantium
+    velit?
+    Ducimus, rerum quo.</p>
+
+  <!-- Images -->
+  <img src="/images/women.jpg" title="Foto de Man Ray" alt="día internacional de la mujer" width="500">
+  <br />
+  <img src="/images/fruits.jpeg" title="Foto de Man Ray" alt="canasta de paja con granadas" width="300">
+
+  <img id="equipo" src="https://images.pexels.com/photos/15552582/pexels-photo-15552582.jpeg"
+    alt="en equipo somos más fuertes" width="200">
+
+  <img src="/images/cat-laptop.gif" alt="gato programador" width="300">
+
+  <!-- Listas -->
+
+  <h4>Lista No Ordenada</h4>
+
+  <ul>
+    <li>JavaScript</li>
+    <li>CSS</li>
+    <li>HTML</li>
+  </ul>
+
+  <h4>Lista Ordenada</h4>
+  <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ol>
+
+  <h4>Lista Descriptiva</h4>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Lenguaje de etiquetas</dd>
+    <dt>CSS</dt>
+    <dd>Lenguaje de hojas de estilo</dd>
+    <dt>JavaScript</dt>
+    <dd>Lenguaje de programación de scripts</dd>
+  </dl>
+  <br><br><br><br><br>
+  <!-- Multimedia tags -->
+  <section>
+    <article>
+      <audio controls src="/multimedia/Blondie - Maria.mp3"></audio>
+    </article>
+    <article>
+      <video controls autoplay loop src="/multimedia/colored old film look with scratches   HD overlay.mp4" width="400">
+      </video>
+    </article>
+
+    <!-- Iframe -->
+    <article id="gordon">
+      <h3>Cooking tips by Gordon Ramsey</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/uNT_AxXrUGs" title="Gordon Ramsey cocinando"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+    </article>
+    <article>
+      <iframe title="titulo del cortometraje" src="https://player.vimeo.com/video/799104662?h=afc6ad639e" width="400"
+        height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </article>
+  </section>
+
+  <!-- Computer Code And Escape Characters -->
+  <p>Aquí tenemos un bucle de JavaScript <code>for(let i = 0; i &lt array.length; i++)</code> ¿Fácil, verdad?</p>
+
+  <p>HTML muestra párrafos con la etiqueta
+    &ltp&gt</p>
+
+  <!-- Links - Hyperlinks -->
+  <a href="https://www.utn.edu.ar/es/">UTN</a>
+  <br />
+  <a href="https://www.utn.edu.ar/es/" target="_blank">Universidad Tecnológica Nacional</a>
+
+  <!-- Citas quotation cite -->
+  <p>Here is a quote from WWF's website:</p>
+
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF
+    works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver
+    innovative solutions that protect communities, wildlife, and the places in which they live.
+  </blockquote>
+
+  <p>WWF's goal is to: <q><i>Build a future where people live in harmony with nature.</i></q></p>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <!-- Tables -->
+  <section id="tabla">
+    <table>
+      <thead>
+        <tr>
+          <th>DATOS</th>
+        </tr>
+        <tr>
+          <th>EMPRESA</th>
+          <th>PAÍS</th>
+          <th>RUBRO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>El clavo burlón</td>
+          <td>Alemania</td>
+          <td>Acero para la construcción</td>
+        </tr>
+        <tr>
+          <td>Cooper & Whatever</td>
+          <td>Estados Unidos</td>
+          <td>Calefacción del hogar</td>
+        </tr>
+        <tr>
+          <td>UTN</td>
+          <td>Argentina</td>
+          <td>Universidad Nacional</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Copyright Nosotros 1999</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <!-- Forms -->
+  <section id="form">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, reiciendis? Tenetur vero, facere rerum quos
+      dolores repellat incidunt quo saepe reprehenderit animi quis. Praesentium ipsa expedita necessitatibus? Dolorem,
+      saepe aliquam?
+      Exercitationem at facilis reiciendis quis, magni, soluta neque illum eius dolorem omnis aliquam eum natus ad
+      debitis doloremque? Nihil, quisquam quod! Temporibus, enim officiis? Tempore fuga molestiae delectus pariatur
+      adipisci.
+      Expedita sunt modi officia rerum illo nulla consequatur nihil tempora vitae ipsa, consequuntur iure pariatur
+      praesentium ad laudantium repellat soluta iusto eligendi provident voluptate at repellendus possimus? Aliquam, cum
+      eveniet?
+      Labore nostrum ex iure nihil magni quos quaerat quasi perspiciatis possimus adipisci debitis ea fugiat minima odio
+      odit impedit illo accusantium doloribus dolorem natus, veritatis, eos temporibus autem! Voluptas, architecto?
+      Ex, odit fuga laudantium repellat, aperiam, perspiciatis unde atque ratione corrupti qui debitis ducimus?
+      Voluptatem maxime minima laboriosam nisi alias autem quasi, fugit, ab facere eligendi dolore sit tempore ipsam.
+      Nam laborum distinctio, dolore saepe explicabo minima? Doloremque laborum, nesciunt illo, tenetur ea nemo omnis
+      quasi dolores illum dicta excepturi sunt. Expedita possimus nam fuga labore, magnam ea. Dolorum, nemo.
+      Sint aliquid obcaecati quae distinctio labore vero animi mollitia, vel cumque quis deserunt laboriosam sed! Alias
+      fugit ut quia, nobis expedita voluptas doloremque eum optio quasi, voluptates doloribus similique dignissimos!
+      Ea eveniet inventore excepturi ad nemo sit quo illum in maiores esse minima recusandae eius fuga consequuntur,
+      dolorum quam aspernatur tempore numquam molestias consequatur iusto. Aliquam rem consequuntur possimus eos.
+      Nam iste placeat similique soluta veniam doloremque sit aut consequatur? Repudiandae, in animi. Sint animi
+      consequuntur rerum repudiandae! Aspernatur sapiente praesentium cumque, veniam eos aut aliquam possimus ullam
+      architecto quidem.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, ipsum. Unde, hic, libero nesciunt deserunt
+      cupiditate ullam quam ea, aspernatur vel expedita et necessitatibus voluptates! Culpa, quibusdam aperiam. Amet,
+      placeat.
+      Aspernatur voluptas a labore deserunt corrupti, magnam quis vitae omnis, non optio ducimus voluptates illo modi,
+      aliquam asperiores rem animi. Id quibusdam, placeat eaque necessitatibus expedita mollitia quidem totam facere.
+      Veritatis hic perspiciatis earum saepe fugit unde nemo dolorem cum. Aperiam maxime laborum necessitatibus ducimus
+      architecto minima veritatis molestias, perspiciatis ab amet, tempore consequatur quibusdam, molestiae omnis hic
+      asperiores ratione.
+      Vel et vitae nulla atque possimus aspernatur nostrum? Saepe accusantium atque amet? Libero deserunt quasi
+      temporibus doloremque provident vitae voluptatum officiis sed, dolores eveniet reprehenderit doloribus non minima
+      alias exercitationem!
+      Ratione nam velit, pariatur blanditiis beatae eos quaerat non. Nisi vel alias ullam non? Dolor laboriosam, nihil
+      perferendis fugiat nulla ratione, suscipit omnis atque sunt odio debitis tempore corrupti. Eius!
+      Accusantium eos delectus provident culpa nam asperiores nihil voluptates fugit repellat! Modi in, assumenda
+      molestiae perferendis magnam voluptate ipsum. Placeat, aperiam natus. Quas obcaecati neque numquam id omnis
+      corporis commodi.
+      Expedita fugiat consectetur explicabo quis magnam. Dolore eos aliquam nisi excepturi dolorem at vel facere ad unde
+      accusantium rerum soluta, nesciunt harum tempora placeat? Consectetur nulla cumque nisi. Dignissimos, fugiat!
+      Quia, beatae nam? Incidunt voluptates veritatis reprehenderit provident vel explicabo unde aspernatur sint qui,
+      doloremque fuga nemo? Hic ut dolores sint. Eius rerum placeat blanditiis modi ad, odio deleniti quo?
+      Laboriosam distinctio placeat, eius dolor nihil reprehenderit totam voluptatem quos cumque laudantium modi tempore
+      obcaecati dicta corporis, numquam cupiditate aperiam nam, vitae vel perferendis maiores accusamus. Accusantium
+      nisi distinctio totam?
+      Aliquam, voluptas cum officia, esse, officiis molestiae iste sint iure in veniam ad excepturi blanditiis non nam
+      animi aspernatur expedita necessitatibus! Sequi omnis enim praesentium. Voluptate eius ex delectus temporibus.</p>
+
+  </section>
+
+  <!-- carga de archivo JS -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
+
+
+JS
+
+// const imgRef = document.querySelector("#equipo");
+const imgRef = document.getElementById("equipo");
+imgRef.addEventListener("click", () => alert("frase motivadora"));
+
+
+
+666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
+CLASE6
+HTML
+
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav>
+    <h4 class="ttl-menu">Navegación afsafasss</h4>
+    <ul>
+      <li><a href="#tabla">TABLAS HTML</a></li>
+      <li><a href="#gordon"> GORDON COCINA</a></li>
+    </ul>
+
+    <a href="#tabla">TABLAS HTML</a>
+    <a href="#gordon"> GORDON COCINA</a>
+  </nav>
+
+  <!-- Headings de h1 a h6 -->
+  <h1>título de nivel 1</h1>
+  <h2>título de nivel 2</h2>
+  <h3>título de nivel 3</h3>
+  <h4>título de nivel 4</h4>
+  <h5>título de nivel 5</h5>
+  <h6>título de nivel 6</h6>
+
+  <!-- párrafo -->
+  <p>Párrafo de muestra</p>
+
+  <!-- elementos block vs inline -->
+  <span>Hola</span>
+  <span>Hola Mundo Mundial Universal</span>
+  <span>Hola</span>
+  <p>mundo</p>
+  <!-- formatting tags -->
+  <p>Lorem <em>ipsum dolor</em> sit amet consectetur adipisicing elit. Delectus exercitationem <i>mollitia praesentium
+      veritatis</i>
+    doloribus, <b>laborum</b>, <u>voluptas, sed nostrum possimus est rerum?</u> Quasi, saepe beatae? Nulla, accusantium
+    velit?
+    Ducimus, rerum quo.</p>
+
+  <!-- Images -->
+  <img src="/images/women.jpg" title="Foto de Man Ray" alt="día internacional de la mujer" width="500">
+  <br />
+  <img src="/images/fruits.jpeg" title="Foto de Man Ray" alt="canasta de paja con granadas" width="300">
+
+  <img id="equipo" src="https://images.pexels.com/photos/15552582/pexels-photo-15552582.jpeg"
+    alt="en equipo somos más fuertes" width="200">
+
+  <img src="/images/cat-laptop.gif" alt="gato programador" width="300">
+
+  <!-- Listas -->
+
+  <h4 class="verde-lima">Lista No Ordenada</h4>
+
+  <ul>
+    <li>JavaScript</li>
+    <li>CSS</li>
+    <li>HTML</li>
+  </ul>
+
+  <h4>Lista Ordenada</h4>
+  <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ol>
+
+  <h4 class="verde-lima">Lista Descriptiva</h4>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Lenguaje de etiquetas</dd>
+    <dt>CSS</dt>
+    <dd>Lenguaje de hojas de estilo</dd>
+    <dt>JavaScript</dt>
+    <dd>Lenguaje de programación de scripts</dd>
+  </dl>
+  <br><br><br><br><br>
+  <!-- Multimedia tags -->
+  <section>
+    <article>
+      <audio controls src="/multimedia/Blondie - Maria.mp3"></audio>
+    </article>
+    <article>
+      <video controls autoplay loop src="/multimedia/colored old film look with scratches   HD overlay.mp4" width="400">
+      </video>
+    </article>
+
+    <!-- Iframe -->
+    <article id="gordon">
+      <h3>Cooking tips by Gordon Ramsey</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/uNT_AxXrUGs" title="Gordon Ramsey cocinando"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+    </article>
+    <article>
+      <iframe title="titulo del cortometraje" src="https://player.vimeo.com/video/799104662?h=afc6ad639e" width="400"
+        height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </article>
+  </section>
+
+  <!-- Computer Code And Escape Characters -->
+  <p>Aquí tenemos un bucle de JavaScript <code>for(let i = 0; i &lt array.length; i++)</code> ¿Fácil, verdad?</p>
+
+  <p>HTML muestra párrafos con la etiqueta
+    &ltp&gt</p>
+
+  <!-- Links - Hyperlinks -->
+  <a href="https://www.utn.edu.ar/es/">UTN</a>
+  <br />
+  <a href="https://www.utn.edu.ar/es/" target="_blank">Universidad Tecnológica Nacional</a>
+
+  <!-- Citas quotation cite -->
+  <p>Here is a quote from WWF's website:</p>
+
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF
+    works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver
+    innovative solutions that protect communities, wildlife, and the places in which they live.
+  </blockquote>
+
+  <p>WWF's goal is to: <q><i>Build a future where people live in harmony with nature.</i></q></p>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <!-- Tables -->
+  <section id="tabla">
+    <table>
+      <thead>
+        <tr>
+          <th>DATOS</th>
+        </tr>
+        <tr>
+          <th>EMPRESA</th>
+          <th>PAÍS</th>
+          <th>RUBRO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>El clavo burlón</td>
+          <td>Alemania</td>
+          <td>Acero para la construcción</td>
+        </tr>
+        <tr>
+          <td>Cooper & Whatever</td>
+          <td>Estados Unidos</td>
+          <td>Calefacción del hogar</td>
+        </tr>
+        <tr>
+          <td>UTN</td>
+          <td>Argentina</td>
+          <td>Universidad Nacional</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Copyright Nosotros 1999</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <!-- Forms -->
+  <section id="form">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, reiciendis? Tenetur vero, facere rerum quos
+      dolores repellat incidunt quo saepe reprehenderit animi quis. Praesentium ipsa expedita necessitatibus? Dolorem,
+      saepe aliquam?
+      Exercitationem at facilis reiciendis quis, magni, soluta neque illum eius dolorem omnis aliquam eum natus ad
+      debitis doloremque? Nihil, quisquam quod! Temporibus, enim officiis? Tempore fuga molestiae delectus pariatur
+      adipisci.
+      Expedita sunt modi officia rerum illo nulla consequatur nihil tempora vitae ipsa, consequuntur iure pariatur
+      praesentium ad laudantium repellat soluta iusto eligendi provident voluptate at repellendus possimus? Aliquam, cum
+      eveniet?
+      Labore nostrum ex iure nihil magni quos quaerat quasi perspiciatis possimus adipisci debitis ea fugiat minima odio
+      odit impedit illo accusantium doloribus dolorem natus, veritatis, eos temporibus autem! Voluptas, architecto?
+      Ex, odit fuga laudantium repellat, aperiam, perspiciatis unde atque ratione corrupti qui debitis ducimus?
+      Voluptatem maxime minima laboriosam nisi alias autem quasi, fugit, ab facere eligendi dolore sit tempore ipsam.
+      Nam laborum distinctio, dolore saepe explicabo minima? Doloremque laborum, nesciunt illo, tenetur ea nemo omnis
+      quasi dolores illum dicta excepturi sunt. Expedita possimus nam fuga labore, magnam ea. Dolorum, nemo.
+      Sint aliquid obcaecati quae distinctio labore vero animi mollitia, vel cumque quis deserunt laboriosam sed! Alias
+      fugit ut quia, nobis expedita voluptas doloremque eum optio quasi, voluptates doloribus similique dignissimos!
+      Ea eveniet inventore excepturi ad nemo sit quo illum in maiores esse minima recusandae eius fuga consequuntur,
+      dolorum quam aspernatur tempore numquam molestias consequatur iusto. Aliquam rem consequuntur possimus eos.
+      Nam iste placeat similique soluta veniam doloremque sit aut consequatur? Repudiandae, in animi. Sint animi
+      consequuntur rerum repudiandae! Aspernatur sapiente praesentium cumque, veniam eos aut aliquam possimus ullam
+      architecto quidem.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, ipsum. Unde, hic, libero nesciunt deserunt
+      cupiditate ullam quam ea, aspernatur vel expedita et necessitatibus voluptates! Culpa, quibusdam aperiam. Amet,
+      placeat.
+      Aspernatur voluptas a labore deserunt corrupti, magnam quis vitae omnis, non optio ducimus voluptates illo modi,
+      aliquam asperiores rem animi. Id quibusdam, placeat eaque necessitatibus expedita mollitia quidem totam facere.
+      Veritatis hic perspiciatis earum saepe fugit unde nemo dolorem cum. Aperiam maxime laborum necessitatibus ducimus
+      architecto minima veritatis molestias, perspiciatis ab amet, tempore consequatur quibusdam, molestiae omnis hic
+      asperiores ratione.
+      Vel et vitae nulla atque possimus aspernatur nostrum? Saepe accusantium atque amet? Libero deserunt quasi
+      temporibus doloremque provident vitae voluptatum officiis sed, dolores eveniet reprehenderit doloribus non minima
+      alias exercitationem!
+      Ratione nam velit, pariatur blanditiis beatae eos quaerat non. Nisi vel alias ullam non? Dolor laboriosam, nihil
+      perferendis fugiat nulla ratione, suscipit omnis atque sunt odio debitis tempore corrupti. Eius!
+      Accusantium eos delectus provident culpa nam asperiores nihil voluptates fugit repellat! Modi in, assumenda
+      molestiae perferendis magnam voluptate ipsum. Placeat, aperiam natus. Quas obcaecati neque numquam id omnis
+      corporis commodi.
+      Expedita fugiat consectetur explicabo quis magnam. Dolore eos aliquam nisi excepturi dolorem at vel facere ad unde
+      accusantium rerum soluta, nesciunt harum tempora placeat? Consectetur nulla cumque nisi. Dignissimos, fugiat!
+      Quia, beatae nam? Incidunt voluptates veritatis reprehenderit provident vel explicabo unde aspernatur sint qui,
+      doloremque fuga nemo? Hic ut dolores sint. Eius rerum placeat blanditiis modi ad, odio deleniti quo?
+      Laboriosam distinctio placeat, eius dolor nihil reprehenderit totam voluptatem quos cumque laudantium modi tempore
+      obcaecati dicta corporis, numquam cupiditate aperiam nam, vitae vel perferendis maiores accusamus. Accusantium
+      nisi distinctio totam?
+      Aliquam, voluptas cum officia, esse, officiis molestiae iste sint iure in veniam ad excepturi blanditiis non nam
+      animi aspernatur expedita necessitatibus! Sequi omnis enim praesentium. Voluptate eius ex delectus temporibus.</p>
+
+  </section>
+
+  <!-- carga de archivo JS -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
+
+
+************************
+JS
+// funciones
+function sayHello() {
+  console.log("Hola");
+};
+function twoSum(num_1, num_2) {
+  if (typeof num_1 === 'number' && typeof num_2 === 'number') {
+    console.log(num_1 + num_2);
+  } else {
+    console.error("la función espera dos números");
+  }
+}
+
+function twoSumConRetorno(num_1, num_2) {
+  if (typeof num_1 === "number" && typeof num_2 === "number") {
+    return "el resultado es: " + (num_1 + num_2);
+  };
+  return "la función espera dos números";
+}
+
+console.log(twoSumConRetorno(9, "as"));
+
+
+// arreglos o vectores 
+let clientes = [];
+clientes[0] = "Rosario";
+clientes[1] = "Romario";
+
+console.log(clientes);
+
+clientes[clientes.length] = "Felipe";
+console.log(clientes);
+
+clientes.push("Felipa", "Roberta", "Celia");
+clientes.pop();
+console.log(clientes);
+clientes.unshift("Pedro");
+console.log(clientes);
+clientes.shift();
+console.log(clientes);
+
+
+
+for (let i = 0; i < clientes.length; i++) {
+  console.log(clientes[i]);
+}
+
+
+77777777777777777777777777777777777777777777777777777777777777777777777777777
+CLASE7
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Repaso CSS y otros temas</title>
+</head>
+
+<body>
+  <section>
+    <article>
+      <h2>título 1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolores nobis ducimus numquam impedit optio?
+        Aperiam, inventore consequuntur vitae veritatis eligendi, ea at tempore illum doloribus fuga in consequatur
+        iusto.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolores nobis ducimus numquam impedit optio?
+        Aperiam, inventore consequuntur vitae veritatis eligendi, ea at tempore illum doloribus fuga in consequatur
+        iusto.
+      </p>
+    </article>
+
+    <article>
+      <h2>título 2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolores nobis ducimus numquam impedit optio?
+        Aperiam, inventore consequuntur vitae veritatis eligendi, ea at tempore illum doloribus fuga in consequatur
+        iusto.
+      </p>
+    </article>
+
+    <article>
+      <h2>título 3</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolores nobis ducimus numquam impedit optio?
+        Aperiam, inventore consequuntur vitae veritatis eligendi, ea at tempore illum doloribus fuga in consequatur
+        iusto.
+      </p>
+    </article>
+
+    <article>
+      <h2 id="ttl">título 4</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolores nobis ducimus numquam impedit optio?
+        Aperiam, inventore consequuntur vitae veritatis eligendi, ea at tempore illum doloribus fuga in consequatur
+        iusto.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolores nobis ducimus numquam impedit optio?
+        Aperiam, inventore consequuntur vitae veritatis eligendi, ea at tempore illum doloribus fuga in consequatur
+        iusto.
+      </p>
+      <button>ttl mejorado?</button>
+      <button>ttl original</button>
+      <br>
+      <hr>
+      <!-- toggle -->
+      <button id="btnToggle">agregar clase</button>
+    </article>
+  </section>
+
+  <!-- nuestra lista dinámica de usuarios -->
+  <section class="list center">
+    <header>
+      <h3>Usuarios registrados</h3>
+      <span>Cuentas activas en este momento</span>
+    </header>
+    <ol id="list" class="noCenter"></ol>
+    <ul id="dirtyList"></ul>
+  </section>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+
+***********************************************
+JS
+
+function changeTitle() {
+  ttl4.innerText = "hemos cambiado";
+  ttl4.classList.add("chetoTtl");
+}
+function restoreStyle() {
+  ttl4.classList.remove("chetoTtl");
+}
+function handleToggle() {
+  if (ttl4.classList.contains("chetoTtl")) {
+    ttl4.classList.remove("chetoTtl");
+    btnToggle.textContent = "agregar clase";
+  } else {
+    ttl4.classList.add("chetoTtl");
+    btnToggle.textContent = "quitar clase";
+  }
+}
+const para = document.querySelector("p");
+const allPara = document.querySelectorAll("p");
+const ttl4 = document.getElementById("ttl");
+const btn = document.getElementsByTagName("button");
+const btnToggle = document.getElementById("btnToggle");
+btnToggle.addEventListener("click", handleToggle);
+btn[0].addEventListener("click", changeTitle);
+btn[1].addEventListener("click", restoreStyle);
+
+console.log("primer párrafo", para);
+console.log("todos ", allPara);
+allPara[2].textContent = "Ma que lorem ni ocho cuartos";
+
+//vamos a cambiar todos lo párrafos con un bucle. utilizaremos la longitud del arreglo que contiene los párrafos para indicarle al bucle cuántas veces debe iterar
+console.log(allPara.length);
+for (let i = 0; i < allPara.length; i++) {
+  allPara[i].textContent = `párrafo número ${i + 1}`;
+}
+
+
+let age = 50;
+let fName = "Marcelo";
+let sName = "Eduardo";
+let like = "programar y enseñar";
+
+console.log("Mi nombre es " + fName + " " + sName + " me encanta " + like + " y tengo " + age + " años.");
+// string interpolation
+console.log(`Mi nombre es ${fName} ${sName} me encanta ${like} y tengo ${age - 1} años`);
+
+
+// creamos elementos en el DOM de acuerdo a datos que ingresan desde una fuente externa (base de datos, API, etc.)
+const list = document.getElementById("list");
+
+const usersData = ["penelopeGlamour33", "donchich0", "gaticatheMonK3y", "firulete", "pedrito", "laJuli33", "elLioDela pipol"];
+
+for (let i = 0; i < usersData.length; i++) {
+  const item = document.createElement("li");
+  item.textContent = usersData[i];
+  list.appendChild(item);
+}
+
+// ojo, no hagan esto, es poco seguro porque pueden introducir código malicioso desde fuera
+let dirtyList = document.getElementById("dirtyList");
+for (let i = 0; i < usersData.length; i++) {
+  dirtyList.innerHTML += `<li>${usersData[i]}</li>`;
+}
+
+*************************************************************************
+CCS
+
+.chetoTtl {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: blanchedalmond;
+  background-color: darkblue;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.noCenter {
+  text-align: start;
+}
+
+.list {
+  background-color: rgb(204, 204, 99);
+  padding: 40px 20px;
+
+}
+
+999999999999999999999999999
+Clase9
+HTML
+
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section>
+    <article id="div1">
+      <h1>art�culo n�mero 1</h1>
+      <img src="https://picsum.photos/150" alt="mock image">
+
+      <p>Enim, numquam inventore consequuntur eum sint tempora ducimus, incidunt qui aperiam deserunt accusantium vero!
+        Neque ipsam porro aliquid adipisci magnam doloremque, expedita nulla quo aspernatur recusandae obcaecati,
+        quaerat quos assumenda.
+        Doloribus consequuntur, aut quae distinctio non laudantium ad soluta beatae officia nulla enim libero dolorum
+        assumenda adipisci doloremque recusandae! Ex beatae quos amet labore eveniet perferendis totam soluta itaque ad?
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptates vero voluptatum, praesentium ullam
+        beatae labore doloremque dolore et sint debitis dolor? Quaerat, eveniet eius modi impedit iure provident iusto.
+      </p>
+    </article>
+
+    <article id="div2">
+      <h1>art�culo n�mero 2</h1>
+      <img src="https://picsum.photos/150" alt="mock image">
+      <p>Velit labore exercitationem, nulla et porro illo possimus? Officia deserunt reiciendis temporibus sequi ad, id
+        laborum quas soluta asperiores laudantium voluptatibus quos, error nobis aspernatur molestiae ipsa odit
+        architecto cumque?</p>
+      <p>
+        Quae maxime consectetur doloremque accusantium tempore reprehenderit repellat praesentium, cumque eveniet
+        officiis explicabo tempora suscipit eaque eum eos aut accusamus eligendi impedit nesciunt molestiae? Quo at
+        quisquam ut reiciendis quos!
+      </p>
+
+    </article>
+
+    <article id="div3">
+      <h1>art�culo n�mero 3</h1>
+      <img src="https://picsum.photos/150" alt="mock image">
+      <p>Distinctio laudantium quia minus! Eos, enim. Dolorum dicta aliquid totam error dolores fugit quo, natus
+        inventore culpa maxime accusantium quis nesciunt distinctio quod et cum numquam ea deleniti? Cum, voluptas!</p>
+      <p>Quibusdam nulla dolor alias dolorem vel porro, provident a vero ratione molestias. Fugiat laudantium odit eum
+        debitis nemo? Dignissimos non libero natus veritatis amet ullam culpa minima quam inventore! Quaerat!
+        Sed quod dolorem aut harum voluptatum! Ullam debitis rem ut magnam, vero, hic nobis voluptatem praesentium
+        recusandae enim libero totam labore molestias voluptatum? Sunt, iusto tempore ducimus totam eos voluptate.
+      </p>
+    </article>
+  </section>
+
+  <footer>
+    <div class="left">
+      <img src="https://picsum.photos/150" alt="logotipo fake">
+      <ul>
+        <li>item de footer 1</li>
+        <li>item de footer 2</li>
+        <li>item de footer 3</li>
+        <li>item de footer 4</li>
+      </ul>
+    </div>
+    <div class="right">
+      <p>para 1para 1para 1para 1</p>
+      <p>para 2para 2para 2</p>
+      <p>para 3para 3para 3para 3para 3</p>
+    </div>
+
+  </footer>
+  <!-- <div class="container">
+    <div class="child">div 1</div>
+    <div class="child">div 2</div>
+    <div class="child">div 3</div>
+    <div class="child">div 1</div>
+    <div class="child">div 2</div>
+    <div class="child">div 3</div>
+    <div class="child">div 1</div>
+    <div class="child">div 2</div>
+    <div class="child">div 3</div>
+    <div class="child">div 1</div>
+    <div class="child">div 2</div>
+    <div class="child">div 3</div>
+    <div class="child">div 1</div>
+    <div class="child">div 2</div>
+    <div class="child">div 3</div>
+    <div class="child">div 1</div>
+    <div class="child">div 2</div>
+    <div class="child">div 3</div>
+    <div class="child">div 1</div>
+    <div class="child">div 2</div>
+    <div class="child">div 3</div>
+    <div class="child">div 1</div>
+    <div class="child">div 2</div>
+    <div class="child">div last</div>
+  </divg> -->
+</body>
+
+</html>
+
+**********************
+ccs
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(175, 197, 198);
+  height: 100vh;
+}
+
+#div2 {
+  align-self: end;
+}
+
+article {
+  width: 28%;
+  height: 500px;
+  border: 1px solid;
+  padding: 16px;
+  margin-bottom: 16px;
+
+}
+
+img {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  column-gap: 16px;
+  height: 400px;
+  border: 2px dotted;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  background-color: black;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  height: 200px;
+  width: 65%;
+  background-color: rgb(62, 58, 58);
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 30%;
+  background-color: rgb(137, 105, 105);
+}
+
+/* 
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+} */lllllll
+
+9999999999999999999999999999999
+Clase9
+HTML "1"
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- copiamos el link del css de Bootstrap desde el CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <nav class="navbar navbar-expand-sm bg-body-secondary">
+      <div class="container-fluid">
+        <img src="./assets/bootstrap-logo-shadow.png" width="50" alt="logo bootstrap">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  <!-- importamos el JavaScript asociado a Bootstrap, necesario para que algunos componentes din�micos funcionen -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+HTML "2"
+PE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- copiamos el link del css de Bootstrap desde el CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <title>Bootstrap</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="myFont">Bootstrap</h1>
+      <h4>El framework de CSS m�s popular</h4>
+      <p>Introducci�n al sistema de grilla. Un contenedor, filas y 12 columnas.</p>
+    </header>
+
+    <!-- traemos el navbar de Bootstrap -->
+
+
+
+    <div>
+      <div class="row">
+        <div class="col-sm-6 col-md-8 bg-primary text-white">.col-md-8</div>
+        <div class="col-sm-6 col-md-4 bg-secondary">.col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 bg-black text-white">.col-md-4</div>
+        <div class="col-lg-4 bg-warning">.col-md-4</div>
+        <div class="col-lg-4 bg-light">.col-md-4</div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-6 bg-danger text-white">.col-md-6</div>
+        <div class="col-md-6 bg-info">.col-md-6</div>
+      </div>
+    </div>
+
+    <!-- ancho autom�tico -->
+
+    <div class="row">
+      <div class="col-12 col-sm  border border-1 ">1 of 2</div>
+      <div class="col-12 col-sm border border-1">2 of 2</div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm border border-1">1 of 3</div>
+      <div class="col-12 col-sm  border border-1">2 of 3</div>
+      <div class="col-12 col-sm  border border-1">3 of 3</div>
+    </div>
+  </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+101010101010101010101010101010101010101010101010
+CLASE10
